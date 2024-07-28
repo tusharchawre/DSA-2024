@@ -12,10 +12,11 @@ public class BinarySearch {
 
         while(start <= end)
         {
-            // We don't use this because the start and end can be so big that they cant be contained in int type range.
+          /* We don't use this because the start and end can be so big
+          that they cant be contained in int type range.*
+           */
 //        int mid = (start + end) / 2
             int mid = start + (end - start) / 2;
-
             if (target < arr[mid]) {
                 end = mid - 1;
             }
@@ -26,8 +27,6 @@ public class BinarySearch {
                 return mid;
             }
         }
-
         return -1;
-
     }
 }
