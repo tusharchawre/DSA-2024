@@ -15,6 +15,9 @@ public class EvenDigits {
        }
        return count;
    }
+
+
+
    public  static boolean even(int num){
         int digits = 0;
         while(num>0){
